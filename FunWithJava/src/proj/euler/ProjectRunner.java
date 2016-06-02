@@ -11,6 +11,9 @@ public class ProjectRunner {
 		
 		long largestPrimeFactor = runLargetPrimeFactorFinder();
 		System.out.println("The largest prime factor is: " + largestPrimeFactor + "\n");
+		
+		long largestPalindrome = runLargestPalindromeFinder();
+		System.out.println("The largest palindrome is: " + largestPalindrome + "\n");
 	}
 	
 	private static long runMultSummer() {
@@ -31,5 +34,9 @@ public class ProjectRunner {
 		LargestPrimeFinder ms = new LargestPrimeFinder(number);
 		return ms.findLargestPrime();
 	}
-
+	
+	private static long runLargestPalindromeFinder() {
+		LargestPalindromeFinder ms = new LargestPalindromeFinder();
+		return ms.findLargestPalindrome();
+	}
 }
